@@ -1,11 +1,7 @@
 from flask import request
 
 from flaskr import create_app
-import pymysql
 from flaskr.biz import user_service
-
-# 初始化MySQLdb模块
-pymysql.install_as_MySQLdb()
 
 app = create_app()
 

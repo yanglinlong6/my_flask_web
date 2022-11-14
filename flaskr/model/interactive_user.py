@@ -3,10 +3,10 @@ from flaskr import db
 
 # 定义user表对应的model类InteractiveUser
 class InteractiveUser(db.Model):
-    __tablename__ = 'user'
+    __tablename__ = 't_user_yang'
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=False)
-    password = db.Column(db.String(80), unique=False)
+    username = db.Column(db.String(512), unique=False)
+    password = db.Column(db.String(512), unique=False)
 
     # 序列化
     @property
