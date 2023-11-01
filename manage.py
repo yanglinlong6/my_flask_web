@@ -2,8 +2,10 @@ from flask import request
 
 from flaskr import create_app
 from flaskr.biz import user_service
+from flaskr.controller import yang_controller
 
 app = create_app()
+app.register_blueprint(yang_controller.simple)
 
 
 @app.route('/')
