@@ -1,6 +1,6 @@
 # 数据库连接池
-# SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:986203@127.0.0.1:3306/go_shorturl'
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://dev_user:df234fl@192.168.3.190:3306/neshield'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:986203@112.74.125.238:3306/neshield'
+# SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://dev_user:df234fl@192.168.3.190:3306/neshield'
 # 自动提交事务
 SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 # 自动回滚事务

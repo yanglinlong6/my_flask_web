@@ -21,5 +21,13 @@ def hello_world_yang():
     return 'Hello World yang!'
 
 
+@app.route('/getById')
+def get_user_by_id():
+    id = request.args.get("id")
+    user = user_service.get_user_by_id(id)
+    print(user.serialize)
+    return user.serialize
+
+
 if __name__ == '__main__':
     app.run()

@@ -13,6 +13,7 @@ def insert_user(username, password):
         db.session.add(user)
         # 提交数据
         db.session.flush()
+        db.session.commit()
         return user
     except SQLAlchemyError as e:
         raise e
